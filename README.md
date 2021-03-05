@@ -1,5 +1,14 @@
-## august-betty能做什么
-  这个包是由微信公众号"屁屁和铭仔的数据之路"博主铭仔和屁屁一起开发的，目的是为了将逻辑回归模型开发流程规范化，该包包含的功能如下：
+## AugustBetty能做什么
+  这个包是由微信公众号"屁屁和铭仔的数据之路"博主铭仔和屁屁一起开发的，目的是为了将逻辑回归模型开发流程规范化，
+## 安装
+    pip install AugustBetty
+## 导入
+    from AugustBetty.AugustBetty import ModelMain
+## 一句话建模
+     data = pd.read_csv(r"F:\论文-风控\train.csv")  #读取训练集
+     m=MakeModel(data,"id","isDefault",0.02,5,512254,drop_value=["issueDate","earliesCreditLine"])
+     m.model_main()
+
 ##v1.0.0的功能如下：
   ####数值变量的最优分组
   输入指定的参数即可进行最优分组
